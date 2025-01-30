@@ -13,7 +13,7 @@ namespace GPM
 
         public DatabaseConnection()
         {
-            string connectionString = "Server=127.0.0.1;Database=gpmdb;Uid=root;Pwd=78563;";
+            string connectionString = "Server=localhost;Port=3307;Database=gpmdb;Uid=root;Pwd=78563;";
             connection = new MySqlConnection(connectionString);
         }
 

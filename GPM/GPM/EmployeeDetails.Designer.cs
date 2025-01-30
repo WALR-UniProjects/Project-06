@@ -115,6 +115,7 @@ namespace GPM
             this.button4.TabIndex = 1;
             this.button4.Text = "Delete";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -227,7 +228,6 @@ namespace GPM
             this.txtEPF_ETFNo.Name = "txtEPF_ETFNo";
             this.txtEPF_ETFNo.Size = new System.Drawing.Size(228, 20);
             this.txtEPF_ETFNo.TabIndex = 5;
-
             // 
             // label17
             // 
