@@ -1,58 +1,100 @@
 ﻿using MySql.Data.MySqlClient;
-using Org.BouncyCastle.Asn1.Cmp;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GPM
 {
     public partial class Form1 : Form
     {
-
-        // MySQL Connection String
-        private string connectionString = "Server=127.0.0.1;Database=gpmdb;Uid=root;Pwd=78563;";
+        private string connectionString = "Server=localhost;Port=3307;Database=gpmdb;Uid=root;Pwd=78563;";
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        // 🔴 OK Button Click - Insert Data into MySQL
         private void button1_Click(object sender, EventArgs e)
         {
-            // Validate Inputs
-            //if (string.IsNullOrWhiteSpace(txtName.Text) ||
-            //    dtpBirthDate.Value == null ||
-            //    string.IsNullOrWhiteSpace(txtNIC.Text) ||
-            //    !System.Text.RegularExpressions.Regex.IsMatch(txtNIC.Text, @"^\d{9}[VvXx]|\d{12}$") || // Validate NIC (Old & New)
-            //    string.IsNullOrWhiteSpace(txtTel1.Text) ||
-            //    !System.Text.RegularExpressions.Regex.IsMatch(txtTel1.Text, @"^0\d{9}$") || // Validate Phone Number Format
-            //    string.IsNullOrWhiteSpace(txtTel2.Text) ||
-            //    !System.Text.RegularExpressions.Regex.IsMatch(txtTel2.Text, @"^0\d{9}$") ||
-            //    string.IsNullOrWhiteSpace(txtCommercialAddress.Text) ||
-            //    string.IsNullOrWhiteSpace(txtPermanentAddress.Text) ||
-            //    string.IsNullOrWhiteSpace(txtEmail.Text) ||
-            //    !System.Text.RegularExpressions.Regex.IsMatch(txtEmail.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$") || // Email Validation
-            //    string.IsNullOrWhiteSpace(textBox9.Text) ||
-            //    !int.TryParse(textBox9.Text, out _) || // Ensure duration is a number
-            //    string.IsNullOrWhiteSpace(txtDescription.Text) ||
-            //    string.IsNullOrWhiteSpace(txtEPF_ETFNo.Text) ||
-            //    !int.TryParse(txtEPF_ETFNo.Text, out _) || // Ensure EPF/ETF No is a number
-            //    cmbDesignation.SelectedIndex == -1 ||
-            //    cmbCategory.SelectedIndex == -1 ||
-            //    cmbStatus.SelectedIndex == -1)
+            // 🔹 Validate Required Fields
+            if (string.IsNullOrWhiteSpace(txtName.Text.Trim()))
+            {
+                ShowValidationError("Name cannot be empty!", txtName);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtNIC.Text.Trim()) || !Regex.IsMatch(txtNIC.Text.Trim(), @"^\d{9}[VvXx]|\d{12}$"))
+            {
+                ShowValidationError("Invalid NIC number! (Format: 9 digits + V/X or 12 digits)", txtNIC);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtTel1.Text.Trim()) || !Regex.IsMatch(txtTel1.Text.Trim(), @"^0\d{9}$"))
+            {
+                ShowValidationError("Invalid Telephone Number! (Format: 0XXXXXXXXX)", txtTel1);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtTel2.Text.Trim()) || !Regex.IsMatch(txtTel2.Text.Trim(), @"^0\d{9}$"))
+            {
+                ShowValidationError("Invalid Telephone Number! (Format: 0XXXXXXXXX)", txtTel2);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtCommercialAddress.Text.Trim()))
+            {
+                ShowValidationError("Commercial Address cannot be empty!", txtCommercialAddress);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtPermanentAddress.Text.Trim()))
+            {
+                ShowValidationError("Permanent Address cannot be empty!", txtPermanentAddress);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtEmail.Text.Trim()) || !Regex.IsMatch(txtEmail.Text.Trim(), @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                ShowValidationError("Invalid Email Address!", txtEmail);
+                return;
+            }
+
+            if (!int.TryParse(textBox9.Text.Trim(), out int duration))
+            {
+                ShowValidationError("Duration must be a valid number!", textBox9);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtDescription.Text.Trim()))
+            {
+                ShowValidationError("Description cannot be empty!", txtDescription);
+                return;
+            }
+
+            if (!int.TryParse(txtEPF_ETFNo.Text.Trim(), out int epfEtfNo))
+            {
+                ShowValidationError("EPF/ETF No must be a valid number!", txtEPF_ETFNo);
+                return;
+            }
+
+            //if (cmbDesignation.SelectedIndex == -1)
             //{
-            //    MessageBox.Show("Please fill in all required fields correctly!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    ShowValidationError("Please select a designation!", cmbDesignation);
             //    return;
             //}
 
+            //if (cmbCategory.SelectedIndex == -1)
+            //{
+            //    ShowValidationError("Please select a category!", cmbCategory);
+            //    return;
+            //}
+
+            //if (cmbStatus.SelectedIndex == -1)
+            //{
+            //    ShowValidationError("Please select a status!", cmbStatus);
+            //    return;
+            //}
 
             try
             {
@@ -61,30 +103,30 @@ namespace GPM
                     conn.Open();
 
                     string query = @"INSERT INTO EmployeeDetails 
-                        (NamewithInitials, BirthDate, Age, NICNo, TelNo1, TelNo2, CommercialAddress, PermenentAddress, 
+                        (NamewithInitials, BirthDate, NICNo, TelNo1, TelNo2, CommercialAddress, PermenentAddress, 
                         EMailAddress, Duration, Description, EPF_ETFNo, Designation, Category, AppointmentDate, Status) 
                         VALUES 
-                        (@Name, @BirthDate, @Age, @NIC, @Tel1, @Tel2, @CommercialAddress, @PermenentAddress, 
+                        (@Name, @BirthDate, @NIC, @Tel1, @Tel2, @CommercialAddress, @PermenentAddress, 
                         @Email, @Duration, @Description, @EPF_ETFNo, @Designation, @Category, @AppointmentDate, @Status)";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
-                        // Assigning values to parameters
-                        cmd.Parameters.AddWithValue("@Name", txtName.Text);
+                        // 🔹 Assign values to parameters
+                        cmd.Parameters.AddWithValue("@Name", txtName.Text.Trim());
                         cmd.Parameters.AddWithValue("@BirthDate", dtpBirthDate.Value);
-                        cmd.Parameters.AddWithValue("@NIC", txtNIC.Text);
-                        cmd.Parameters.AddWithValue("@Tel1", txtTel1.Text);
-                        cmd.Parameters.AddWithValue("@Tel2", txtTel2.Text);
-                        cmd.Parameters.AddWithValue("@CommercialAddress", txtCommercialAddress.Text);
-                        cmd.Parameters.AddWithValue("@PermenentAddress", txtPermanentAddress.Text);
-                        cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
-                        cmd.Parameters.AddWithValue("@Duration", textBox9.Text);
-                        cmd.Parameters.AddWithValue("@Description", txtDescription.Text);
-                        cmd.Parameters.AddWithValue("@EPF_ETFNo", txtEPF_ETFNo.Text);
-                        cmd.Parameters.AddWithValue("@Designation", cmbDesignation.SelectedItem.ToString());
-                        cmd.Parameters.AddWithValue("@Category", cmbCategory.SelectedItem.ToString());
+                        cmd.Parameters.AddWithValue("@NIC", txtNIC.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Tel1", txtTel1.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Tel2", txtTel2.Text.Trim());
+                        cmd.Parameters.AddWithValue("@CommercialAddress", txtCommercialAddress.Text.Trim());
+                        cmd.Parameters.AddWithValue("@PermenentAddress", txtPermanentAddress.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Duration", textBox9.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Description", txtDescription.Text.Trim());
+                        cmd.Parameters.AddWithValue("@EPF_ETFNo", epfEtfNo);
+                        //cmd.Parameters.AddWithValue("@Designation", cmbDesignation.SelectedItem.ToString());
+                        //cmd.Parameters.AddWithValue("@Category", cmbCategory.SelectedItem.ToString());
                         cmd.Parameters.AddWithValue("@AppointmentDate", dtpAppointmentDate.Value);
-                        cmd.Parameters.AddWithValue("@Status", cmbStatus.SelectedItem.ToString());
+                        //cmd.Parameters.AddWithValue("@Status", cmbStatus.SelectedItem.ToString());
 
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Employee details saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -96,5 +138,55 @@ namespace GPM
                 MessageBox.Show("Error: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-    }   
+
+        // 🔹 Helper method to show validation message and focus on the field
+        private void ShowValidationError(string message, Control control)
+        {
+            MessageBox.Show(message, "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            control.Focus();
+        }
+
+        // 🔴 Delete Button Click - Delete Data from MySQL
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtRecNo.Text.Trim()))
+            {
+                MessageBox.Show("Please enter a valid Record No (RecNo)!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DialogResult confirm = MessageBox.Show("Are you sure you want to delete this record?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (confirm == DialogResult.No)
+                return;
+
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    string query = "DELETE FROM EmployeeDetails WHERE RecNo = @RecNo";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@RecNo", txtRecNo.Text.Trim());
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Employee record deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("No record found with the given RecNo!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+    }
 }
