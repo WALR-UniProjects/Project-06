@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\gpm\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|e:\\business projects\\walr unipro\\project-06\\gpm\\gpm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\gpm\\employeedetails.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\employeedetails.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|e:\\business projects\\walr unipro\\project-06\\gpm\\gpm\\employee allocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\employee allocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\gpm\\employee allocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\employee allocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,29 +34,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmployeeDetails.Designer.cs",
-              "DocumentMoniker": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\EmployeeDetails.Designer.cs",
-              "RelativeDocumentMoniker": "GPM\\EmployeeDetails.Designer.cs",
-              "ToolTip": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\EmployeeDetails.Designer.cs",
-              "RelativeToolTip": "GPM\\EmployeeDetails.Designer.cs",
-              "ViewState": "AgIAAM0AAAAAAAAAAAAuwOYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\Program.cs",
+              "RelativeDocumentMoniker": "GPM\\Program.cs",
+              "ToolTip": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\Program.cs",
+              "RelativeToolTip": "GPM\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T14:06:41.304Z",
+              "WhenOpened": "2025-01-31T05:17:26.52Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DatabaseConnection.cs",
-              "DocumentMoniker": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\DatabaseConnection.cs",
-              "RelativeDocumentMoniker": "GPM\\DatabaseConnection.cs",
-              "ToolTip": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\DatabaseConnection.cs",
-              "RelativeToolTip": "GPM\\DatabaseConnection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Employee Allocation.cs",
+              "DocumentMoniker": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\Employee Allocation.cs",
+              "RelativeDocumentMoniker": "GPM\\Employee Allocation.cs",
+              "ToolTip": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\Employee Allocation.cs",
+              "RelativeToolTip": "GPM\\Employee Allocation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T13:40:24.499Z",
+              "WhenOpened": "2025-01-31T04:59:29.865Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee Allocation.cs [Design]",
+              "DocumentMoniker": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\Employee Allocation.cs",
+              "RelativeDocumentMoniker": "GPM\\Employee Allocation.cs",
+              "ToolTip": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\Employee Allocation.cs [Design]",
+              "RelativeToolTip": "GPM\\Employee Allocation.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T04:49:31.783Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
