@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|e:\\business projects\\walr unipro\\project-06\\gpm\\gpm\\discount offer details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\discount offer details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|e:\\business projects\\walr unipro\\project-06\\gpm\\gpm\\discount offer details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\discount offer details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|e:\\business projects\\walr unipro\\project-06\\gpm\\gpm\\advance payment details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\advance payment details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,27 +26,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Discount Offer Details.cs",
-              "DocumentMoniker": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\Discount Offer Details.cs",
-              "RelativeDocumentMoniker": "GPM\\Discount Offer Details.cs",
-              "ToolTip": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\Discount Offer Details.cs",
-              "RelativeToolTip": "GPM\\Discount Offer Details.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T11:52:02.945Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Discount Offer Details.cs [Design]",
-              "DocumentMoniker": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\Discount Offer Details.cs",
-              "RelativeDocumentMoniker": "GPM\\Discount Offer Details.cs",
-              "ToolTip": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\Discount Offer Details.cs [Design]",
-              "RelativeToolTip": "GPM\\Discount Offer Details.cs [Design]",
+              "Title": "Advance Payment Details.cs [Design]",
+              "DocumentMoniker": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\Advance Payment Details.cs",
+              "RelativeDocumentMoniker": "GPM\\Advance Payment Details.cs",
+              "ToolTip": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\Advance Payment Details.cs [Design]",
+              "RelativeToolTip": "GPM\\Advance Payment Details.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T11:45:10.006Z",
+              "WhenOpened": "2025-01-31T12:41:41.891Z",
               "EditorCaption": " [Design]"
             }
           ]
