@@ -83,6 +83,16 @@ namespace GPM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Girl {
+            get {
+                object obj = ResourceManager.GetObject("Girl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WhiteShirt {
             get {
                 object obj = ResourceManager.GetObject("WhiteShirt", resourceCulture);
