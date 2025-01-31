@@ -41,3 +41,4 @@ E:\Business Projects\WALR UniPro\Project-06\GPM\GPM\obj\Debug\GPM.csproj.Up2Date
 E:\Business Projects\WALR UniPro\Project-06\GPM\GPM\obj\Debug\GPM.exe
 E:\Business Projects\WALR UniPro\Project-06\GPM\GPM\obj\Debug\GPM.pdb
 E:\Business Projects\WALR UniPro\Project-06\GPM\GPM\obj\Debug\GPM.Form1.resources
+E:\Business Projects\WALR UniPro\Project-06\GPM\GPM\obj\Debug\GPM.Employee_Allocation.resources
