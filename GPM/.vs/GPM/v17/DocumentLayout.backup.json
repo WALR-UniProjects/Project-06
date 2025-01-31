@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|e:\\business projects\\walr unipro\\project-06\\gpm\\gpm\\discount offer details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\discount offer details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|e:\\business projects\\walr unipro\\project-06\\gpm\\gpm\\discount offer details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\discount offer details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -27,31 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Discount Offer Details.cs",
-              "DocumentMoniker": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\Discount Offer Details.cs",
-              "RelativeDocumentMoniker": "GPM\\Discount Offer Details.cs",
-              "ToolTip": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\Discount Offer Details.cs",
-              "RelativeToolTip": "GPM\\Discount Offer Details.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T11:52:02.945Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Discount Offer Details.cs [Design]",
-              "DocumentMoniker": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\Discount Offer Details.cs",
-              "RelativeDocumentMoniker": "GPM\\Discount Offer Details.cs",
-              "ToolTip": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\Discount Offer Details.cs [Design]",
-              "RelativeToolTip": "GPM\\Discount Offer Details.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T11:45:10.006Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }
