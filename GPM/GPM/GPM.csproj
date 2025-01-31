@@ -100,6 +100,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="Delivery Cost Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delivery Cost Details.Designer.cs">
+      <DependentUpon>Delivery Cost Details.cs</DependentUpon>
+    </Compile>
     <Compile Include="Designation Details.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Delivery Cost Details.resx">
+      <DependentUpon>Delivery Cost Details.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Designation Details.resx">
       <DependentUpon>Designation Details.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,6 +203,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bike.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
