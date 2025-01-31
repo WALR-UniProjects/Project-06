@@ -1,14 +1,13 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
+using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GPM
 {
     public partial class Form1 : Form
     {
-        private string connectionString = "Server=localhost;Port=3307;Database=gpmdb;Uid=root;Pwd=78563;";
+        private string connectionString = "Server=YOUR_SERVER_NAME; Database=gpmdb; Integrated Security=True;";
 
         public Form1()
         {
@@ -33,12 +32,6 @@ namespace GPM
             if (string.IsNullOrWhiteSpace(txtTel1.Text.Trim()) || !Regex.IsMatch(txtTel1.Text.Trim(), @"^0\d{9}$"))
             {
                 ShowValidationError("Invalid Telephone Number! (Format: 0XXXXXXXXX)", txtTel1);
-                return;
-            }
-
-            if (string.IsNullOrWhiteSpace(txtTel2.Text.Trim()) || !Regex.IsMatch(txtTel2.Text.Trim(), @"^0\d{9}$"))
-            {
-                ShowValidationError("Invalid Telephone Number! (Format: 0XXXXXXXXX)", txtTel2);
                 return;
             }
 
@@ -72,33 +65,17 @@ namespace GPM
                 return;
             }
 
-            if (!int.TryParse(txtEPF_ETFNo.Text.Trim(), out int epfEtfNo))
+            // 🔹 EPF_ETFNo should be treated as a string in SQL Server
+            string epfEtfNo = txtEPF_ETFNo.Text.Trim();
+            if (string.IsNullOrWhiteSpace(epfEtfNo))
             {
-                ShowValidationError("EPF/ETF No must be a valid number!", txtEPF_ETFNo);
+                ShowValidationError("EPF/ETF No cannot be empty!", txtEPF_ETFNo);
                 return;
             }
 
-            //if (cmbDesignation.SelectedIndex == -1)
-            //{
-            //    ShowValidationError("Please select a designation!", cmbDesignation);
-            //    return;
-            //}
-
-            //if (cmbCategory.SelectedIndex == -1)
-            //{
-            //    ShowValidationError("Please select a category!", cmbCategory);
-            //    return;
-            //}
-
-            //if (cmbStatus.SelectedIndex == -1)
-            //{
-            //    ShowValidationError("Please select a status!", cmbStatus);
-            //    return;
-            //}
-
             try
             {
-                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
 
@@ -109,7 +86,7 @@ namespace GPM
                         (@Name, @BirthDate, @NIC, @Tel1, @Tel2, @CommercialAddress, @PermenentAddress, 
                         @Email, @Duration, @Description, @EPF_ETFNo, @Designation, @Category, @AppointmentDate, @Status)";
 
-                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         // 🔹 Assign values to parameters
                         cmd.Parameters.AddWithValue("@Name", txtName.Text.Trim());
@@ -120,13 +97,13 @@ namespace GPM
                         cmd.Parameters.AddWithValue("@CommercialAddress", txtCommercialAddress.Text.Trim());
                         cmd.Parameters.AddWithValue("@PermenentAddress", txtPermanentAddress.Text.Trim());
                         cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim());
-                        cmd.Parameters.AddWithValue("@Duration", textBox9.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Duration", duration);
                         cmd.Parameters.AddWithValue("@Description", txtDescription.Text.Trim());
                         cmd.Parameters.AddWithValue("@EPF_ETFNo", epfEtfNo);
-                        //cmd.Parameters.AddWithValue("@Designation", cmbDesignation.SelectedItem.ToString());
-                        //cmd.Parameters.AddWithValue("@Category", cmbCategory.SelectedItem.ToString());
+                        cmd.Parameters.AddWithValue("@Designation", cmbDesignation.SelectedItem?.ToString() ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@Category", cmbCategory.SelectedItem?.ToString() ?? (object)DBNull.Value);
                         cmd.Parameters.AddWithValue("@AppointmentDate", dtpAppointmentDate.Value);
-                        //cmd.Parameters.AddWithValue("@Status", cmbStatus.SelectedItem.ToString());
+                        cmd.Parameters.AddWithValue("@Status", cmbStatus.SelectedItem?.ToString() ?? (object)DBNull.Value);
 
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Employee details saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -146,7 +123,7 @@ namespace GPM
             control.Focus();
         }
 
-        // 🔴 Delete Button Click - Delete Data from MySQL
+        // 🔴 Delete Button Click - Delete Data from SQL Server
         private void button4_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtRecNo.Text.Trim()))
@@ -161,13 +138,13 @@ namespace GPM
 
             try
             {
-                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
 
                     string query = "DELETE FROM EmployeeDetails WHERE RecNo = @RecNo";
 
-                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@RecNo", txtRecNo.Text.Trim());
                         int rowsAffected = cmd.ExecuteNonQuery();
