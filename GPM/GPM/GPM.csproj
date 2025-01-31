@@ -66,6 +66,7 @@
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.8.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
     </Reference>
@@ -99,6 +100,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="Employee Allocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Allocation.Designer.cs">
+      <DependentUpon>Employee Allocation.cs</DependentUpon>
+    </Compile>
     <Compile Include="EmployeeDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +114,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Employee Allocation.resx">
+      <DependentUpon>Employee Allocation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EmployeeDetails.resx">
       <DependentUpon>EmployeeDetails.cs</DependentUpon>
     </EmbeddedResource>
