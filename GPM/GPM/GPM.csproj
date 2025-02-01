@@ -99,12 +99,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Advance Payment Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advance Payment Details.Designer.cs">
+      <DependentUpon>Advance Payment Details.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseConnection.cs" />
     <Compile Include="Designation Details.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Designation Details.Designer.cs">
       <DependentUpon>Designation Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Discount Offer Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Discount Offer Details.Designer.cs">
+      <DependentUpon>Discount Offer Details.cs</DependentUpon>
     </Compile>
     <Compile Include="Employee Allocation.cs">
       <SubType>Form</SubType>
@@ -118,6 +130,18 @@
     <Compile Include="EmployeeDetails.Designer.cs">
       <DependentUpon>EmployeeDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Item Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item Details.Designer.cs">
+      <DependentUpon>Item Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product Details.Designer.cs">
+      <DependentUpon>Product Details.cs</DependentUpon>
+    </Compile>
     <Compile Include="Product Sale Cost Details.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,14 +150,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Advance Payment Details.resx">
+      <DependentUpon>Advance Payment Details.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Designation Details.resx">
       <DependentUpon>Designation Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Discount Offer Details.resx">
+      <DependentUpon>Discount Offer Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee Allocation.resx">
       <DependentUpon>Employee Allocation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeDetails.resx">
       <DependentUpon>EmployeeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item Details.resx">
+      <DependentUpon>Item Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product Details.resx">
+      <DependentUpon>Product Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Product Sale Cost Details.resx">
       <DependentUpon>Product Sale Cost Details.cs</DependentUpon>
@@ -164,6 +200,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Girl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
