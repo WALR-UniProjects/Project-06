@@ -1,26 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
+using System.Data.SqlClient;
 
 namespace GPM
 {
     internal class DatabaseConnection
     {
-        private MySqlConnection connection;
+        private SqlConnection connection;
 
         public DatabaseConnection()
         {
-            string connectionString = "Server=localhost;Port=3307;Database=gpmdb;Uid=root;Pwd=78563;";
-            connection = new MySqlConnection(connectionString);
+            string connectionString = "Server=DESKTOP-8HIN9RF\\SQLEXPRESS;Database=gpmdb;Integrated Security=True;";
+            connection = new SqlConnection(connectionString);
         }
 
-        public MySqlConnection GetConnection()
+        public SqlConnection GetConnection()
         {
             return connection;
-
         }
     }
 }

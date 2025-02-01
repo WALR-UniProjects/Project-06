@@ -16,7 +16,7 @@ namespace GPM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Designation_Details());
+            Application.Run(new Form1());
         }
     }
 }

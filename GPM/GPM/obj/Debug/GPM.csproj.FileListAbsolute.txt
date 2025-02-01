@@ -42,3 +42,9 @@ E:\Business Projects\WALR UniPro\Project-06\GPM\GPM\obj\Debug\GPM.exe
 E:\Business Projects\WALR UniPro\Project-06\GPM\GPM\obj\Debug\GPM.pdb
 E:\Business Projects\WALR UniPro\Project-06\GPM\GPM\obj\Debug\GPM.Form1.resources
 E:\Business Projects\WALR UniPro\Project-06\GPM\GPM\obj\Debug\GPM.Employee_Allocation.resources
+E:\Business Projects\WALR UniPro\Project-06\GPM\GPM\obj\Debug\GPM.Advance_Payment_Details.resources
+E:\Business Projects\WALR UniPro\Project-06\GPM\GPM\obj\Debug\GPM.Designation_Details.resources
+E:\Business Projects\WALR UniPro\Project-06\GPM\GPM\obj\Debug\GPM.Discount_Offer_Details.resources
+E:\Business Projects\WALR UniPro\Project-06\GPM\GPM\obj\Debug\GPM.Item_Details.resources
+E:\Business Projects\WALR UniPro\Project-06\GPM\GPM\obj\Debug\GPM.Product_Details.resources
+E:\Business Projects\WALR UniPro\Project-06\GPM\GPM\obj\Debug\GPM.Product_Sale_Cost_Details.resources

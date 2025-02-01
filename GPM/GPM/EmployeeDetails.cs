@@ -8,7 +8,11 @@ namespace GPM
 {
     public partial class Form1 : Form
     {
+<<<<<<< Updated upstream
         private string connectionString = "Server=localhost;Port=3307;Database=gpmdb;Uid=root;Pwd=78563;";
+=======
+        private string connectionString = "Server=DESKTOP-8HIN9RF\\SQLEXPRESS; Database=gpmdb; Integrated Security=True;";
+>>>>>>> Stashed changes
 
         public Form1()
         {
