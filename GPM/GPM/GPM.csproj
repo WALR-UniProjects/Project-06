@@ -207,5 +207,8 @@
   <ItemGroup>
     <None Include="Resources\Money1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

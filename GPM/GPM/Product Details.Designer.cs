@@ -38,15 +38,15 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtNo = new System.Windows.Forms.TextBox();
+            this.txtCode = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.cmbCategory = new System.Windows.Forms.ComboBox();
+            this.cmbSize = new System.Windows.Forms.ComboBox();
+            this.cmbColor = new System.Windows.Forms.ComboBox();
+            this.cmbMaterial = new System.Windows.Forms.ComboBox();
+            this.cmbStatus = new System.Windows.Forms.ComboBox();
+            this.txtDescription = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -154,74 +154,74 @@
             this.label9.TabIndex = 9;
             this.label9.Text = "Description";
             // 
-            // textBox1
+            // txtNo
             // 
-            this.textBox1.Location = new System.Drawing.Point(351, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 10;
+            this.txtNo.Location = new System.Drawing.Point(351, 21);
+            this.txtNo.Name = "txtNo";
+            this.txtNo.Size = new System.Drawing.Size(100, 20);
+            this.txtNo.TabIndex = 10;
             // 
-            // textBox2
+            // txtCode
             // 
-            this.textBox2.Location = new System.Drawing.Point(183, 89);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 11;
+            this.txtCode.Location = new System.Drawing.Point(183, 89);
+            this.txtCode.Name = "txtCode";
+            this.txtCode.Size = new System.Drawing.Size(100, 20);
+            this.txtCode.TabIndex = 11;
             // 
-            // textBox3
+            // txtName
             // 
-            this.textBox3.Location = new System.Drawing.Point(183, 132);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(148, 20);
-            this.textBox3.TabIndex = 12;
+            this.txtName.Location = new System.Drawing.Point(183, 132);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(148, 20);
+            this.txtName.TabIndex = 12;
             // 
-            // comboBox1
+            // cmbCategory
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(183, 176);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 13;
+            this.cmbCategory.FormattingEnabled = true;
+            this.cmbCategory.Location = new System.Drawing.Point(183, 176);
+            this.cmbCategory.Name = "cmbCategory";
+            this.cmbCategory.Size = new System.Drawing.Size(100, 21);
+            this.cmbCategory.TabIndex = 13;
             // 
-            // comboBox2
+            // cmbSize
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(183, 224);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 21);
-            this.comboBox2.TabIndex = 14;
+            this.cmbSize.FormattingEnabled = true;
+            this.cmbSize.Location = new System.Drawing.Point(183, 224);
+            this.cmbSize.Name = "cmbSize";
+            this.cmbSize.Size = new System.Drawing.Size(100, 21);
+            this.cmbSize.TabIndex = 14;
             // 
-            // comboBox3
+            // cmbColor
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(183, 266);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(100, 21);
-            this.comboBox3.TabIndex = 15;
+            this.cmbColor.FormattingEnabled = true;
+            this.cmbColor.Location = new System.Drawing.Point(183, 266);
+            this.cmbColor.Name = "cmbColor";
+            this.cmbColor.Size = new System.Drawing.Size(100, 21);
+            this.cmbColor.TabIndex = 15;
             // 
-            // comboBox4
+            // cmbMaterial
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(183, 310);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(100, 21);
-            this.comboBox4.TabIndex = 16;
+            this.cmbMaterial.FormattingEnabled = true;
+            this.cmbMaterial.Location = new System.Drawing.Point(183, 310);
+            this.cmbMaterial.Name = "cmbMaterial";
+            this.cmbMaterial.Size = new System.Drawing.Size(100, 21);
+            this.cmbMaterial.TabIndex = 16;
             // 
-            // comboBox5
+            // cmbStatus
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(183, 351);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(100, 21);
-            this.comboBox5.TabIndex = 17;
+            this.cmbStatus.FormattingEnabled = true;
+            this.cmbStatus.Location = new System.Drawing.Point(183, 351);
+            this.cmbStatus.Name = "cmbStatus";
+            this.cmbStatus.Size = new System.Drawing.Size(100, 21);
+            this.cmbStatus.TabIndex = 17;
             // 
-            // textBox4
+            // txtDescription
             // 
-            this.textBox4.Location = new System.Drawing.Point(183, 392);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(199, 61);
-            this.textBox4.TabIndex = 18;
+            this.txtDescription.Location = new System.Drawing.Point(183, 392);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(199, 61);
+            this.txtDescription.TabIndex = 18;
             // 
             // button1
             // 
@@ -232,6 +232,7 @@
             this.button1.TabIndex = 19;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -283,15 +284,15 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDescription);
+            this.Controls.Add(this.cmbStatus);
+            this.Controls.Add(this.cmbMaterial);
+            this.Controls.Add(this.cmbColor);
+            this.Controls.Add(this.cmbSize);
+            this.Controls.Add(this.cmbCategory);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtCode);
+            this.Controls.Add(this.txtNo);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -322,15 +323,15 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtNo;
+        private System.Windows.Forms.TextBox txtCode;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.ComboBox cmbCategory;
+        private System.Windows.Forms.ComboBox cmbSize;
+        private System.Windows.Forms.ComboBox cmbColor;
+        private System.Windows.Forms.ComboBox cmbMaterial;
+        private System.Windows.Forms.ComboBox cmbStatus;
+        private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

@@ -1,0 +1,75 @@
+USE [gpmdb];
+
+CREATE TABLE Employee_Details (
+    RecNo INT PRIMARY KEY IDENTITY(1,1),
+    NamewithInitials NVARCHAR(100) NOT NULL,
+    BirthDate DATE NOT NULL,
+    NICNo NVARCHAR(20) NOT NULL,
+    TelNo1 NVARCHAR(15),
+    TelNo2 NVARCHAR(15),
+    CommercialAddress NVARCHAR(255),
+    PermenentAddress NVARCHAR(255),
+    EMailAddress NVARCHAR(100),
+    Duration INT,
+    Description NVARCHAR(MAX),
+    EPF_ETFNo NVARCHAR(50),
+    Designation NVARCHAR(100),
+    Category NVARCHAR(50),
+    AppointmentDate DATE,
+    Status NVARCHAR(50)
+);
+
+CREATE TABLE Advance_Payment (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    code VARCHAR(50) NOT NULL,
+    payment_no VARCHAR(50) UNIQUE NOT NULL,
+    value DECIMAL(10,2) NOT NULL,
+    percentage DECIMAL(5,2) NOT NULL,
+    status VARCHAR(20) NOT NULL CHECK (status IN ('Pending', 'Approved', 'Rejected', 'Processing')),
+    description TEXT NULL,
+    created_at DATETIME2 DEFAULT GETDATE()
+);
+
+CREATE TABLE Designation_Details (
+    No INT PRIMARY KEY IDENTITY(1,1), -- Auto-incremented 'No' field
+    Name NVARCHAR(100) NOT NULL,      -- Name field, not nullable
+    Description NVARCHAR(255) NOT NULL -- Description field, not nullable
+);
+
+CREATE TABLE Discount_Offer_Details (
+    No INT PRIMARY KEY IDENTITY(1,1),  -- Auto-incremented ID
+    Name NVARCHAR(100) NOT NULL,
+    Value DECIMAL(10,2) NOT NULL,
+    StartDate DATE NOT NULL,
+    EndDate DATE NOT NULL,
+    Category NVARCHAR(50) NOT NULL,
+    Status NVARCHAR(50) NOT NULL
+);
+
+-- Create Employee_Allocation Table
+CREATE TABLE Employee_Allocation (
+    AllocationID INT PRIMARY KEY IDENTITY(1,1), -- Auto-incremented primary key
+    ManagerEMPNo INT NOT NULL,                  -- Manager Employee ID, not nullable
+    SupplierEMPNo1 INT NOT NULL,                -- Supplier 1 Employee ID, not nullable
+    SupplierEMPNo2 INT NULL,                    -- Supplier 2 Employee ID, nullable
+    WorkerEMPNo1 INT NOT NULL,                  -- Worker 1 Employee ID, not nullable
+    WorkerEMPNo2 INT NULL,                      -- Worker 2 Employee ID, nullable
+    WorkerEMPNo3 INT NULL,                      -- Worker 3 Employee ID, nullable
+    WorkerEMPNo4 INT NULL,                      -- Worker 4 Employee ID, nullable
+    Status VARCHAR(10) NOT NULL DEFAULT 'Active' CHECK (Status IN ('Active', 'Inactive')), -- Status with default value and check constraint
+    AllocationDate DATETIME DEFAULT GETDATE()   -- Allocation date with default value (current date and time)
+);
+
+CREATE TABLE ProductDetails (
+    No INT PRIMARY KEY,
+    Code NVARCHAR(50) NOT NULL,
+    Name NVARCHAR(100) NOT NULL,
+    Category NVARCHAR(50) NOT NULL,
+    Size NVARCHAR(20) NOT NULL,
+    Color NVARCHAR(20) NOT NULL,
+    Materials NVARCHAR(50) NOT NULL,
+    Status NVARCHAR(20) NOT NULL,
+    Description NVARCHAR(255) NULL
+);
+
+

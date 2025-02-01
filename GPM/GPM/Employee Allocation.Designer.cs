@@ -1,4 +1,6 @@
-﻿namespace GPM
+﻿using System;
+
+namespace GPM
 {
     partial class Employee_Allocation
     {
@@ -35,26 +37,26 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dtpReceiveDate = new System.Windows.Forms.DateTimePicker();
+            this.dtpRequestDate = new System.Windows.Forms.DateTimePicker();
+            this.txtCustomerOrderNo = new System.Windows.Forms.TextBox();
+            this.txtCode = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbStatus = new System.Windows.Forms.ComboBox();
+            this.txtWorker4 = new System.Windows.Forms.TextBox();
+            this.txtWorker3 = new System.Windows.Forms.TextBox();
+            this.txtWorker2 = new System.Windows.Forms.TextBox();
+            this.txtWorker1 = new System.Windows.Forms.TextBox();
+            this.txtSupplier2 = new System.Windows.Forms.TextBox();
+            this.txtSupplier1 = new System.Windows.Forms.TextBox();
+            this.txtManager = new System.Windows.Forms.TextBox();
+            this.txtWorker4Name = new System.Windows.Forms.TextBox();
+            this.txtWorker3Name = new System.Windows.Forms.TextBox();
+            this.txtWorker2Name = new System.Windows.Forms.TextBox();
+            this.txtWorker1Name = new System.Windows.Forms.TextBox();
+            this.txtSupplier2Name = new System.Windows.Forms.TextBox();
+            this.txtSupplier1Name = new System.Windows.Forms.TextBox();
+            this.txtManagerName = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -72,7 +74,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.label18 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -95,10 +96,10 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.dateTimePicker2);
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.dtpReceiveDate);
+            this.panel1.Controls.Add(this.dtpRequestDate);
+            this.panel1.Controls.Add(this.txtCustomerOrderNo);
+            this.panel1.Controls.Add(this.txtCode);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
@@ -148,52 +149,53 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_3);
             // 
-            // dateTimePicker2
+            // dtpReceiveDate
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(191, 106);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 8;
+            this.dtpReceiveDate.Location = new System.Drawing.Point(191, 106);
+            this.dtpReceiveDate.Name = "dtpReceiveDate";
+            this.dtpReceiveDate.Size = new System.Drawing.Size(200, 20);
+            this.dtpReceiveDate.TabIndex = 8;
             // 
-            // dateTimePicker1
+            // dtpRequestDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(191, 75);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 7;
+            this.dtpRequestDate.Location = new System.Drawing.Point(191, 75);
+            this.dtpRequestDate.Name = "dtpRequestDate";
+            this.dtpRequestDate.Size = new System.Drawing.Size(200, 20);
+            this.dtpRequestDate.TabIndex = 7;
             // 
-            // textBox2
+            // txtCustomerOrderNo
             // 
-            this.textBox2.Location = new System.Drawing.Point(191, 43);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtCustomerOrderNo.Location = new System.Drawing.Point(191, 43);
+            this.txtCustomerOrderNo.Name = "txtCustomerOrderNo";
+            this.txtCustomerOrderNo.Size = new System.Drawing.Size(200, 20);
+            this.txtCustomerOrderNo.TabIndex = 6;
             // 
-            // textBox1
+            // txtCode
             // 
-            this.textBox1.Location = new System.Drawing.Point(302, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtCode.Location = new System.Drawing.Point(302, 5);
+            this.txtCode.Name = "txtCode";
+            this.txtCode.Size = new System.Drawing.Size(100, 20);
+            this.txtCode.TabIndex = 5;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox9);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.comboBox8);
-            this.groupBox1.Controls.Add(this.comboBox7);
-            this.groupBox1.Controls.Add(this.comboBox6);
-            this.groupBox1.Controls.Add(this.comboBox5);
-            this.groupBox1.Controls.Add(this.comboBox4);
-            this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cmbStatus);
+            this.groupBox1.Controls.Add(this.txtWorker4);
+            this.groupBox1.Controls.Add(this.txtWorker3);
+            this.groupBox1.Controls.Add(this.txtWorker2);
+            this.groupBox1.Controls.Add(this.txtWorker1);
+            this.groupBox1.Controls.Add(this.txtSupplier2);
+            this.groupBox1.Controls.Add(this.txtSupplier1);
+            this.groupBox1.Controls.Add(this.txtManager);
+            this.groupBox1.Controls.Add(this.txtWorker4Name);
+            this.groupBox1.Controls.Add(this.txtWorker3Name);
+            this.groupBox1.Controls.Add(this.txtWorker2Name);
+            this.groupBox1.Controls.Add(this.txtWorker1Name);
+            this.groupBox1.Controls.Add(this.txtSupplier2Name);
+            this.groupBox1.Controls.Add(this.txtSupplier1Name);
+            this.groupBox1.Controls.Add(this.txtManagerName);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.label15);
@@ -215,118 +217,111 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Employee Allocation";
             // 
-            // textBox9
+            // cmbStatus
             // 
-            this.textBox9.Location = new System.Drawing.Point(247, 213);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(136, 20);
-            this.textBox9.TabIndex = 27;
+            this.cmbStatus.FormattingEnabled = true;
+            this.cmbStatus.Location = new System.Drawing.Point(85, 249);
+            this.cmbStatus.Name = "cmbStatus";
+            this.cmbStatus.Size = new System.Drawing.Size(78, 21);
+            this.cmbStatus.TabIndex = 35;
             // 
-            // textBox8
+            // txtWorker4
             // 
-            this.textBox8.Location = new System.Drawing.Point(247, 188);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(136, 20);
-            this.textBox8.TabIndex = 26;
+            this.txtWorker4.Location = new System.Drawing.Point(141, 213);
+            this.txtWorker4.Name = "txtWorker4";
+            this.txtWorker4.Size = new System.Drawing.Size(100, 20);
+            this.txtWorker4.TabIndex = 34;
             // 
-            // textBox7
+            // txtWorker3
             // 
-            this.textBox7.Location = new System.Drawing.Point(247, 161);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(136, 20);
-            this.textBox7.TabIndex = 25;
+            this.txtWorker3.Location = new System.Drawing.Point(141, 187);
+            this.txtWorker3.Name = "txtWorker3";
+            this.txtWorker3.Size = new System.Drawing.Size(100, 20);
+            this.txtWorker3.TabIndex = 33;
             // 
-            // textBox6
+            // txtWorker2
             // 
-            this.textBox6.Location = new System.Drawing.Point(247, 135);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(136, 20);
-            this.textBox6.TabIndex = 24;
+            this.txtWorker2.Location = new System.Drawing.Point(141, 161);
+            this.txtWorker2.Name = "txtWorker2";
+            this.txtWorker2.Size = new System.Drawing.Size(100, 20);
+            this.txtWorker2.TabIndex = 32;
             // 
-            // textBox5
+            // txtWorker1
             // 
-            this.textBox5.Location = new System.Drawing.Point(247, 101);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(136, 20);
-            this.textBox5.TabIndex = 23;
+            this.txtWorker1.Location = new System.Drawing.Point(141, 135);
+            this.txtWorker1.Name = "txtWorker1";
+            this.txtWorker1.Size = new System.Drawing.Size(100, 20);
+            this.txtWorker1.TabIndex = 31;
             // 
-            // textBox4
+            // txtSupplier2
             // 
-            this.textBox4.Location = new System.Drawing.Point(247, 74);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(136, 20);
-            this.textBox4.TabIndex = 22;
+            this.txtSupplier2.Location = new System.Drawing.Point(141, 101);
+            this.txtSupplier2.Name = "txtSupplier2";
+            this.txtSupplier2.Size = new System.Drawing.Size(100, 20);
+            this.txtSupplier2.TabIndex = 30;
             // 
-            // textBox3
+            // txtSupplier1
             // 
-            this.textBox3.Location = new System.Drawing.Point(247, 40);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(136, 20);
-            this.textBox3.TabIndex = 21;
+            this.txtSupplier1.Location = new System.Drawing.Point(141, 74);
+            this.txtSupplier1.Name = "txtSupplier1";
+            this.txtSupplier1.Size = new System.Drawing.Size(100, 20);
+            this.txtSupplier1.TabIndex = 29;
             // 
-            // comboBox8
+            // txtManager
             // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(150, 213);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(91, 21);
-            this.comboBox8.TabIndex = 20;
+            this.txtManager.Location = new System.Drawing.Point(141, 40);
+            this.txtManager.Name = "txtManager";
+            this.txtManager.Size = new System.Drawing.Size(100, 20);
+            this.txtManager.TabIndex = 28;
             // 
-            // comboBox7
+            // txtWorker4Name
             // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(150, 187);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(91, 21);
-            this.comboBox7.TabIndex = 19;
+            this.txtWorker4Name.Location = new System.Drawing.Point(247, 213);
+            this.txtWorker4Name.Name = "txtWorker4Name";
+            this.txtWorker4Name.Size = new System.Drawing.Size(136, 20);
+            this.txtWorker4Name.TabIndex = 27;
             // 
-            // comboBox6
+            // txtWorker3Name
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(150, 161);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(91, 21);
-            this.comboBox6.TabIndex = 18;
+            this.txtWorker3Name.Location = new System.Drawing.Point(247, 188);
+            this.txtWorker3Name.Name = "txtWorker3Name";
+            this.txtWorker3Name.Size = new System.Drawing.Size(136, 20);
+            this.txtWorker3Name.TabIndex = 26;
             // 
-            // comboBox5
+            // txtWorker2Name
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(150, 135);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(91, 21);
-            this.comboBox5.TabIndex = 17;
+            this.txtWorker2Name.Location = new System.Drawing.Point(247, 161);
+            this.txtWorker2Name.Name = "txtWorker2Name";
+            this.txtWorker2Name.Size = new System.Drawing.Size(136, 20);
+            this.txtWorker2Name.TabIndex = 25;
             // 
-            // comboBox4
+            // txtWorker1Name
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(150, 101);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(91, 21);
-            this.comboBox4.TabIndex = 16;
+            this.txtWorker1Name.Location = new System.Drawing.Point(247, 135);
+            this.txtWorker1Name.Name = "txtWorker1Name";
+            this.txtWorker1Name.Size = new System.Drawing.Size(136, 20);
+            this.txtWorker1Name.TabIndex = 24;
             // 
-            // comboBox3
+            // txtSupplier2Name
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(150, 74);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(91, 21);
-            this.comboBox3.TabIndex = 15;
+            this.txtSupplier2Name.Location = new System.Drawing.Point(247, 101);
+            this.txtSupplier2Name.Name = "txtSupplier2Name";
+            this.txtSupplier2Name.Size = new System.Drawing.Size(136, 20);
+            this.txtSupplier2Name.TabIndex = 23;
             // 
-            // comboBox2
+            // txtSupplier1Name
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(150, 40);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(91, 21);
-            this.comboBox2.TabIndex = 14;
+            this.txtSupplier1Name.Location = new System.Drawing.Point(247, 74);
+            this.txtSupplier1Name.Name = "txtSupplier1Name";
+            this.txtSupplier1Name.Size = new System.Drawing.Size(136, 20);
+            this.txtSupplier1Name.TabIndex = 22;
             // 
-            // comboBox1
+            // txtManagerName
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(113, 249);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(95, 21);
-            this.comboBox1.TabIndex = 13;
+            this.txtManagerName.Location = new System.Drawing.Point(247, 40);
+            this.txtManagerName.Name = "txtManagerName";
+            this.txtManagerName.Size = new System.Drawing.Size(136, 20);
+            this.txtManagerName.TabIndex = 21;
             // 
             // label17
             // 
@@ -390,7 +385,6 @@
             this.label11.Size = new System.Drawing.Size(18, 13);
             this.label11.TabIndex = 6;
             this.label11.Text = "2.";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label10
             // 
@@ -490,12 +484,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Code";
             // 
-            // directorySearcher1
-            // 
-            this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -527,6 +515,8 @@
 
         }
 
+ 
+
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -549,30 +539,33 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.DirectoryServices.DirectorySearcher directorySearcher1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker dtpReceiveDate;
+        private System.Windows.Forms.DateTimePicker dtpRequestDate;
+        private System.Windows.Forms.TextBox txtCustomerOrderNo;
+        private System.Windows.Forms.TextBox txtCode;
+        private System.Windows.Forms.TextBox txtManagerName;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtWorker4Name;
+        private System.Windows.Forms.TextBox txtWorker3Name;
+        private System.Windows.Forms.TextBox txtWorker2Name;
+        private System.Windows.Forms.TextBox txtWorker1Name;
+        private System.Windows.Forms.TextBox txtSupplier2Name;
+        private System.Windows.Forms.TextBox txtSupplier1Name;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox txtWorker4;
+        private System.Windows.Forms.TextBox txtWorker3;
+        private System.Windows.Forms.TextBox txtWorker2;
+        private System.Windows.Forms.TextBox txtWorker1;
+        private System.Windows.Forms.TextBox txtSupplier2;
+        private System.Windows.Forms.TextBox txtSupplier1;
+        private System.Windows.Forms.TextBox txtManager;
+        private System.Windows.Forms.ComboBox cmbStatus;
+        private EventHandler label11_Click;
+        private EventHandler button1_Click;
+        private EventHandler button1_Click_1;
+        private EventHandler button1_Click_2;
     }
 }

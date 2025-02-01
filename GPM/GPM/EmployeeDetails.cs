@@ -7,11 +7,29 @@ namespace GPM
 {
     public partial class Form1 : Form
     {
-        private string connectionString = "Server=YOUR_SERVER_NAME; Database=gpmdb; Integrated Security=True;";
+        private string connectionString = "Server=DESKTOP-8HIN9RF\\SQLEXPRESS; Database=gpmdb; Integrated Security=True;";
 
         public Form1()
         {
             InitializeComponent();
+            LoadComboBoxValues(); // Load dropdown values on form load
+        }
+
+        private void LoadComboBoxValues()
+        {
+            // 🔹 Populate Designation ComboBox
+            cmbDesignation.Items.AddRange(new string[] { "Driver", "Manager", "Supplier", "Worker" });
+
+            // 🔹 Populate Category ComboBox
+            cmbCategory.Items.AddRange(new string[] { "Permanent", "Trainee" });
+
+            // 🔹 Populate Status ComboBox
+            cmbStatus.Items.AddRange(new string[] { "Active", "Inactive" });
+
+            // 🔹 Set default values (optional)
+            cmbDesignation.SelectedIndex = 0;
+            cmbCategory.SelectedIndex = 0;
+            cmbStatus.SelectedIndex = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
