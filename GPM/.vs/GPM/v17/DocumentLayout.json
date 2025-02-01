@@ -34,7 +34,11 @@
         {
           "DockedWidth": 200,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           "SelectedChildIndex": -1,
+=======
+          "SelectedChildIndex": 5,
+>>>>>>> Stashed changes
 =======
           "SelectedChildIndex": 5,
 >>>>>>> Stashed changes
@@ -87,6 +91,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 0,
               "Title": "EmployeeDetails.cs",
               "DocumentMoniker": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\EmployeeDetails.cs",
@@ -95,6 +100,52 @@
               "RelativeToolTip": "GPM\\EmployeeDetails.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+=======
+              "DocumentIndex": 3,
+              "Title": "dbo.EmployeeDetails [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_8HIN9RF_SQLEXPRESS/gpmdb/True/SqlTable/dbo.EmployeeDetails.sql",
+              "ToolTip": "dbo.EmployeeDetails [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-01T03:10:30.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\Program.cs",
+              "RelativeDocumentMoniker": "GPM\\Program.cs",
+              "ToolTip": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\Program.cs",
+              "RelativeToolTip": "GPM\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T15:50:04.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DatabaseConnection.cs",
+              "DocumentMoniker": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\DatabaseConnection.cs",
+              "RelativeDocumentMoniker": "GPM\\DatabaseConnection.cs",
+              "ToolTip": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\DatabaseConnection.cs",
+              "RelativeToolTip": "GPM\\DatabaseConnection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T15:44:44.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeDetails.cs",
+              "DocumentMoniker": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\EmployeeDetails.cs",
+              "RelativeDocumentMoniker": "GPM\\EmployeeDetails.cs",
+              "ToolTip": "E:\\Business Projects\\WALR UniPro\\Project-06\\GPM\\GPM\\EmployeeDetails.cs",
+              "RelativeToolTip": "GPM\\EmployeeDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+>>>>>>> Stashed changes
               "WhenOpened": "2025-01-31T15:44:41.006Z",
               "EditorCaption": ""
             },
