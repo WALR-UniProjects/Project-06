@@ -105,7 +105,19 @@
     <Compile Include="Advance Payment Details.Designer.cs">
       <DependentUpon>Advance Payment Details.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="Delivery Cost Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delivery Cost Details.Designer.cs">
+      <DependentUpon>Delivery Cost Details.cs</DependentUpon>
+    </Compile>
     <Compile Include="Designation Details.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +164,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Advance Payment Details.resx">
       <DependentUpon>Advance Payment Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delivery Cost Details.resx">
+      <DependentUpon>Delivery Cost Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Designation Details.resx">
       <DependentUpon>Designation Details.cs</DependentUpon>
@@ -209,6 +227,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Money2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bike1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

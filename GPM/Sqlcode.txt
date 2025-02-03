@@ -72,4 +72,11 @@ CREATE TABLE ProductDetails (
     Description NVARCHAR(255) NULL
 );
 
+-- Create DeliveryCostDetails Table
+CREATE TABLE Delivery_Cost_Details (
+    No INT PRIMARY KEY IDENTITY(1,1), -- Auto-incremented primary key
+    VehicleType NVARCHAR(50) NOT NULL, -- Vehicle type (e.g., Bike, Truck, Van)
+    AmountPerKm DECIMAL(10, 2) NOT NULL, -- Amount per kilometer in Rs
+    Status NVARCHAR(20) NOT NULL -- Status (e.g., Active, Inactive)
+);
 

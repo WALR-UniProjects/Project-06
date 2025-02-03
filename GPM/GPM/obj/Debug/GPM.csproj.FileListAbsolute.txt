@@ -92,3 +92,5 @@ E:\Business Projects\GPM\GPM\obj\Debug\GPM.csproj.CoreCompileInputs.cache
 E:\Business Projects\GPM\GPM\obj\Debug\GPM.csproj.Up2Date
 E:\Business Projects\GPM\GPM\obj\Debug\GPM.exe
 E:\Business Projects\GPM\GPM\obj\Debug\GPM.pdb
+E:\Business Projects\GPM\GPM\obj\Debug\GPM.Delivery_Cost_Details.resources
+E:\Business Projects\GPM\GPM\obj\Debug\GPM.Dashboard.resources

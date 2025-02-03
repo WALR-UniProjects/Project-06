@@ -3,23 +3,36 @@
   "WorkspaceRootPath": "E:\\Business Projects\\GPM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|e:\\business projects\\gpm\\gpm\\product details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\product details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|e:\\business projects\\gpm\\gpm\\advance payment details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\advance payment details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_8HIN9RF_SQLEXPRESS/gpmdb/True/SqlTable/dbo.Product_Details.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|e:\\business projects\\gpm\\gpm\\delivery cost details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\delivery cost details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|e:\\business projects\\gpm\\gpm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|e:\\business projects\\gpm\\gpm\\advance payment details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\advance payment details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|e:\\business projects\\gpm\\gpm\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|E:\\Business Projects\\GPM\\gpm\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|E:\\Business Projects\\GPM\\gpm\\employeedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\employeedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|e:\\business projects\\gpm\\gpm\\product details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\product details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|e:\\business projects\\gpm\\gpm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|E:\\Business Projects\\GPM\\gpm\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F47C5D2-F12B-411F-B61D-3E0C4510277A}|GPM\\GPM.csproj|solutionrelative:gpm\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,54 +59,94 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "dbo.Product_Details [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_8HIN9RF_SQLEXPRESS/gpmdb/True/SqlTable/dbo.Product_Details.sql",
-              "ToolTip": "dbo.Product_Details [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-02-01T08:29:11.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Product Details.cs",
-              "DocumentMoniker": "E:\\Business Projects\\GPM\\GPM\\Product Details.cs",
-              "RelativeDocumentMoniker": "GPM\\Product Details.cs",
-              "ToolTip": "E:\\Business Projects\\GPM\\GPM\\Product Details.cs",
-              "RelativeToolTip": "GPM\\Product Details.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
+              "Title": "Delivery Cost Details.cs [Design]",
+              "DocumentMoniker": "E:\\Business Projects\\GPM\\GPM\\Delivery Cost Details.cs",
+              "RelativeDocumentMoniker": "GPM\\Delivery Cost Details.cs",
+              "ToolTip": "E:\\Business Projects\\GPM\\GPM\\Delivery Cost Details.cs [Design]",
+              "RelativeToolTip": "GPM\\Delivery Cost Details.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T08:16:25.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Product Details.cs [Design]",
-              "DocumentMoniker": "E:\\Business Projects\\GPM\\GPM\\Product Details.cs",
-              "RelativeDocumentMoniker": "GPM\\Product Details.cs",
-              "ToolTip": "E:\\Business Projects\\GPM\\GPM\\Product Details.cs [Design]",
-              "RelativeToolTip": "GPM\\Product Details.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T08:13:17.151Z",
+              "WhenOpened": "2025-02-02T14:50:35.522Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Advance Payment Details.cs",
+              "DocumentMoniker": "E:\\Business Projects\\GPM\\GPM\\Advance Payment Details.cs",
+              "RelativeDocumentMoniker": "GPM\\Advance Payment Details.cs",
+              "ToolTip": "E:\\Business Projects\\GPM\\GPM\\Advance Payment Details.cs",
+              "RelativeToolTip": "GPM\\Advance Payment Details.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T14:47:44.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Advance Payment Details.cs [Design]",
+              "DocumentMoniker": "E:\\Business Projects\\GPM\\GPM\\Advance Payment Details.cs",
+              "RelativeDocumentMoniker": "GPM\\Advance Payment Details.cs",
+              "ToolTip": "E:\\Business Projects\\GPM\\GPM\\Advance Payment Details.cs [Design]",
+              "RelativeToolTip": "GPM\\Advance Payment Details.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T14:47:39.766Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DatabaseConnection.cs",
+              "DocumentMoniker": "E:\\Business Projects\\GPM\\GPM\\DatabaseConnection.cs",
+              "RelativeDocumentMoniker": "GPM\\DatabaseConnection.cs",
+              "ToolTip": "E:\\Business Projects\\GPM\\GPM\\DatabaseConnection.cs",
+              "RelativeToolTip": "GPM\\DatabaseConnection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T14:31:30.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Dashboard.cs",
+              "DocumentMoniker": "E:\\Business Projects\\GPM\\GPM\\Dashboard.cs",
+              "RelativeDocumentMoniker": "GPM\\Dashboard.cs",
+              "ToolTip": "E:\\Business Projects\\GPM\\GPM\\Dashboard.cs",
+              "RelativeToolTip": "GPM\\Dashboard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T00:45:39.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dashboard.cs [Design]",
+              "DocumentMoniker": "E:\\Business Projects\\GPM\\GPM\\Dashboard.cs",
+              "RelativeDocumentMoniker": "GPM\\Dashboard.cs",
+              "ToolTip": "E:\\Business Projects\\GPM\\GPM\\Dashboard.cs [Design]",
+              "RelativeToolTip": "GPM\\Dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T00:39:47.185Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Business Projects\\GPM\\GPM\\Program.cs",
               "RelativeDocumentMoniker": "GPM\\Program.cs",
               "ToolTip": "E:\\Business Projects\\GPM\\GPM\\Program.cs",
               "RelativeToolTip": "GPM\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-01T03:23:01.436Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "EmployeeDetails.cs",
               "DocumentMoniker": "E:\\Business Projects\\GPM\\GPM\\EmployeeDetails.cs",
               "RelativeDocumentMoniker": "GPM\\EmployeeDetails.cs",
